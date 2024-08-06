@@ -12,7 +12,7 @@ int main()
     cin >> m;
     cout << "enter number of coloumns: ";
     cin >> n;
-    for (int i = 1; i <= m; i++)
+    for (int i = 1; i <= m;i++)
     {
         int k = 97;
         for (int j = 1; j <= n; j++)

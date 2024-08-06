@@ -14,5 +14,5 @@ int main(){
         count++;
     }
     cout<<"no. flips required is: "<<count;
-
+    
 }

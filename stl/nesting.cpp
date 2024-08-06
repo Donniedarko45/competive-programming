@@ -8,11 +8,11 @@ int main()
 
     int num_of_students;
     cin >> num_of_students;
-    
+
     for (int i = 0; i < num_of_students; ++i)
     {
         string first_name, last_name;
-        
+
         // number of marks inputting...
         int ct;
         cin >> first_name >> last_name >> ct;
