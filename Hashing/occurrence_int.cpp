@@ -14,7 +14,7 @@ int main(){
     for(int i=0;i<size;i++){
         hash[arr[i]]+=1;
     }
-    //now checking the how many times a number is in the arrray..
+    // now checking the how many times a number is in the arrray..
     int q;
     cin>>q;
     cout<<"Checking how many times an num is existed: "<<endl;
