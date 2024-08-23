@@ -14,6 +14,19 @@ int maxSubarray(vector<int>nums){
   }
   cout<<maxi;
 }
+
+// better solution
+int bettermaxSubarray(vector<int>nums){
+   int maxi=INT_MIN;
+   for(int i=0;i<nums.size();i++){
+     int sum=0;
+     for(int j=i;j<nums.size();j++){
+        sum+=nums[j];
+        maxi=max(sum,maxi);
+     }
+   }
+   cout<<maxi;
+}
 int main(){
   vector<int>nums;
   int num;
@@ -24,5 +37,6 @@ int main(){
     cin>>num;
     nums.push_back(num);
   }
-  maxSubarray(nums);
+ // maxSubarray(nums);
+  bettermaxSubarray(nums);
 }
