@@ -27,8 +27,23 @@ int longestConsecutiveSequence(vector<int>nums){
 
 
 //better solution..
-int betterLongestConsecutiveSequence(vector<int>num){
-   
+int betterLongestConsecutiveSequence(vector<int>nums){
+   // first sort..
+  sort(nums.begin(), nums.end());
+
+   int longest=1,countCurrent=0,lastSmaller=INT_MIN;
+   for(int i=0;i<nums.size();i++){
+     if(nums[i]-1==lastSmaller){
+       countCurrent++;
+       lastSmaller=nums[i];
+     }
+     else if (nums[i]!=lastSmaller){
+      countCurrent=1;
+      lastSmaller=nums[i];
+     }
+     longest=max(longest,countCurrent);
+   }
+   cout<<longest;
 }
 int main(){
   int n;
@@ -40,5 +55,6 @@ int main(){
        cin>>element;
        nums.push_back(element);
     }
-  longestConsecutiveSequence(nums);
+ // longestConsecutiveSequence(nums);
+ betterLongestConsecutiveSequence(nums);
 }
