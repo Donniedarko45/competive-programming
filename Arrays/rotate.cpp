@@ -4,8 +4,7 @@
 using namespace std;
 
 /*
-*input:- arr[]=[1,2,3,4,5]
-*output:-arr[]=[2,3,4,5,1] */
+*input:- arr[]=[1,2,3,4,5]*output:-arr[]=[2,3,4,5,1] */
 
 int ArrayRotationByOnePlace(int arr[],int n){
     int temp=arr[0];

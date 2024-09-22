@@ -9,7 +9,6 @@ int linearSearch(vector<int>a,int num){
         }
     }
 }
-
 int main(){
     vector<int>a;
     a={1,2,3,4,5,6,7};
