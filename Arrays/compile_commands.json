@@ -1,0 +1,5 @@
+{
+    "directory": "~/projects/computer science/competitve programming/Arrays/",
+    "command": "gcc -I/usr/include -std=c11 -c a.c",
+    "file": "a.c"
+  },

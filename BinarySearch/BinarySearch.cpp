@@ -1,6 +1,6 @@
+#include "bits/stdc++.h"
 #include <iostream>
 using namespace std;
-
 int IndexOfElement(int arr[], int size, int target) {
   int low = 0;
   int high = size - 1;
@@ -17,6 +17,7 @@ int IndexOfElement(int arr[], int size, int target) {
   return -1;
 }
 
+
 int IndexOfElementRecursive(int arr[], int size, int target, int low,
                             int high) {
   if (low > high)
@@ -28,7 +29,6 @@ int IndexOfElementRecursive(int arr[], int size, int target, int low,
     return IndexOfElementRecursive(arr, size, 8, mid + 1, high);
   return IndexOfElementRecursive(arr, size, 8, low, mid - 1);
 }
-
 int main() {
   int target = 16;
   int arr[8] = {3, 4, 6, 7, 9, 12, 16, 17};

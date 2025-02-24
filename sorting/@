@@ -3,7 +3,6 @@
 using namespace std;
 
 void merge(vector<int> &arr, int low, int mid, int high) {
-  cout << "hello";
   vector<int> temp;
   int left = low;
   int right = mid + 1;
@@ -32,10 +31,10 @@ void merge(vector<int> &arr, int low, int mid, int high) {
 }
 
 void ms(vector<int> &arr, int low, int high) {
+  cout << "hello";
   if (low <= high)
     return;
-
-  cout << "inside first fxn hello";
+  cout << "hellidew";
   int mid = (low + high) / 2;
   ms(arr, low, mid);
   ms(arr, mid + 1, high);
@@ -43,7 +42,6 @@ void ms(vector<int> &arr, int low, int high) {
 }
 
 void mergeSort(vector<int> &arr, int n) {
-  cout << "inside first fxn hello";
   ms(arr, 0, n - 1); // n will be initial size of an array
 }
 

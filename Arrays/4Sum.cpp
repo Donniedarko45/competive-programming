@@ -1,10 +1,9 @@
 #include <bits/stdc++.h>
 #include <vector>
 using namespace std;
-
 // brute force methodd...
 
-vector<vector<int>> fourSum(vector<int> &nums, int target) {
+vector<vector<int>>fourSum(vector<int> &nums, int target) {
   int n = nums.size();
   set<vector<int>> st;
   for (int i = 0; i < n; i++) {
@@ -50,7 +49,6 @@ vector<vector<int>> fourSumBetter(vector<int> &nums, int target) {
   return ans;
 }
 
-// optimal soluton..
 vector<vector<int>> fourSumOptimal(vector<int> &nums, int target) {
   sort(nums.begin(), nums.end());
   int n = nums.size();
@@ -88,4 +86,4 @@ vector<vector<int>> fourSumOptimal(vector<int> &nums, int target) {
   return ans;
 }
 
-int main() {}
+int main() { int a, b; }
