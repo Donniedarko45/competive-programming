@@ -1,7 +1,6 @@
-#include <bitset>
+#include <bits/stdc++.h>
 #include <cmath>
 #include <iostream>
-#include <string>
 #include <vector>
 
 // Constants for HDLC frame

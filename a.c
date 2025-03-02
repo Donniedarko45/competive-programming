@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-
 #define FLAG "01111110"
 #define MAX_LEN 100
 
